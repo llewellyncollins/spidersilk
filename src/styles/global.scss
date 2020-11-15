@@ -1,0 +1,54 @@
+@import 'variables.scss';
+
+:root {
+    --base-font-size: #{$base-font-size};
+    --accent-color: #{$accent-color};
+    --primary-text-color: #{$primary-text-color};
+    --secondary-text-color: #{$secondary-text-color};
+    --accent-text-color: #{$accent-text-color};
+    --bg-color: #{$bg-color};
+    --nav-bg-color: #{$nav-bg-color};
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-text-color: #ffffff;
+        --secondary-text-color: #000000;
+        --nav-bg-color: #000000;
+        --bg-color: #313131;
+    }
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+html {
+    @include font-size(16);
+    color: var(--primary-text-color);
+}
+
+h1 {
+    @include font-size(32);
+}
+
+p {
+    @include font-size(24);
+}
+
+.content {
+    position: absolute;
+    top: rem-size(100);
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+
+    .side-bar {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        height: 100%;
+    }
+}

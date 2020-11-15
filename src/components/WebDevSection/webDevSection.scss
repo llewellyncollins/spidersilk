@@ -1,0 +1,15 @@
+@import '../../styles/utils.scss';
+
+.web-dev-section {
+    width: 100%;
+    height: 50%;
+    background-color: var(--accent-color);
+    padding: rem-size(50) rem-size(60);
+    color: $primary-text-color;
+    transition: background-color 0.3s;
+
+    background-image: url(./important_devices-white-48dp.svg);
+    background-size: rem-size(236);
+    background-repeat: no-repeat;
+    background-position: right rem-size(30) bottom rem-size(30);
+}

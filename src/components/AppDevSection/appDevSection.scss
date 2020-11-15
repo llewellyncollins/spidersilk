@@ -1,0 +1,18 @@
+@import '../../styles/utils.scss';
+
+.app-dev-section {
+    width: 50%;
+    height: 100%;
+    background-color: var(--bg-color);
+    padding: rem-size(50) rem-size(60);
+    color: var(--primary-text-color);
+    transition: background-color 0.3s;
+
+    .feature-blocks {
+        text-align: center;
+
+        &-row {
+            margin-top: rem-size(15);
+        }
+    }
+}

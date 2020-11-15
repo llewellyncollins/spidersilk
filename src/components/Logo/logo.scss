@@ -1,0 +1,14 @@
+@import '../../styles/utils.scss';
+
+.logo {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    font-weight: bold;
+    @include font-size(48);
+
+    &--highlight {
+        color: var(--accent-text-color);
+    }
+}

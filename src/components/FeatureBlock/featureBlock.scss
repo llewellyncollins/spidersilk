@@ -1,0 +1,52 @@
+@import '../../styles/utils.scss';
+
+.feature-block {
+    --feature-block-bg: #212121;
+    position: relative;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: rem-size(210);
+    height: rem-size(190);
+    background-color: #212121;
+    border-radius: rem-size(10);
+    color: var(--secondary-text-color);
+    font-weight: bold;
+    margin: 0 rem-size(15);
+    transition: background-color 0.15s;
+
+    &:hover {
+        background-color: var(--accent-color);
+
+        .feature-block__icon {
+            filter: brightness(0.3);
+        }
+    }
+
+    &__icon {
+        width: rem-size(100);
+        height: rem-size(100);
+    }
+
+    &__text {
+        text-transform: uppercase;
+        @include font-size(20);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    .feature-block {
+        background-color: #d9d9d9;
+
+        &:hover {
+            .feature-block__icon {
+                filter: brightness(1);
+            }
+        }
+
+        &__icon {
+            filter: brightness(0.3);
+        }
+    }
+}
