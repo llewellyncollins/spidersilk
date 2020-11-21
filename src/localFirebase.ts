@@ -2,7 +2,6 @@ import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/analytics';
 import 'firebase/performance';
-import 'firebase/remote-config';
 
 const firebaseApp = firebase.initializeApp( {
     apiKey: "AIzaSyBvGbY1UvVOod28gG7OeeQAl0IEg0EdIXU",
@@ -18,9 +17,4 @@ const firebaseApp = firebase.initializeApp( {
 export const performance = firebaseApp.performance();
 export const analytics = firebaseApp.analytics();
 export const firestore = firebaseApp.firestore();
-export const remoteConfig = firebaseApp.remoteConfig();
 
-remoteConfig.settings = {
-    minimumFetchIntervalMillis: 43200000,
-    fetchTimeoutMillis: 600000
-};
