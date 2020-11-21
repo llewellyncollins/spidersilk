@@ -17,3 +17,4 @@ const firebaseApp = firebase.initializeApp( {
 export const performance = firebaseApp.performance();
 export const analytics = firebaseApp.analytics();
 export const firestore = firebaseApp.firestore();
+

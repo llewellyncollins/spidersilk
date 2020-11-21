@@ -1,3 +1,4 @@
+@import-normalize;
 @import 'variables.scss';
 
 :root {
@@ -30,7 +31,7 @@ html {
 }
 
 h1 {
-    @include font-size(32);
+    @include font-size(40);
 }
 
 p {
@@ -50,5 +51,9 @@ p {
         flex-direction: column;
         width: 50%;
         height: 100%;
+    }
+
+    .container {
+        padding: rem-size(50) rem-size(60);
     }
 }

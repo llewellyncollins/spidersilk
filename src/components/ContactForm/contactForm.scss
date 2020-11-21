@@ -1,0 +1,67 @@
+@import '../../styles/utils.scss';
+
+.contact-form {
+    &-group {
+        width: 100%;
+        margin-bottom: rem-size(10);
+        @include font-size(24);
+
+        textarea {
+            height: rem-size(150);
+
+            &:disabled {
+                background-color: #ffffff;
+            }
+        }
+
+        &__label {
+            display: block;
+            margin-bottom: rem-size(10);
+        }
+
+        &__input {
+            width: 100%;
+            height: rem-size(60);
+            margin-bottom: rem-size(10);
+            padding: rem-size(15);
+            border: none;
+            outline: none;
+            box-sizing: border-box;
+            border: solid #ffffff rem-size(3);
+            @include font-size(24);
+
+            &:hover {
+                border-bottom-color: var(--accent-color);
+            }
+
+            &:focus {
+                border-color: var(--accent-color);
+            }
+        }
+
+        &__error {
+            color: #ff0000;
+        }
+    }
+
+    &__button {
+        width: 100%;
+        height: rem-size(60);
+        background-color: var(--accent-color);
+        @include font-size(30);
+
+        &:disabled {
+            background-color: #9c9898;
+        }
+    }
+
+    &__success,
+    &__error {
+        @include font-size(24);
+        margin-bottom: rem-size(10);
+    }
+
+    &__error {
+        color: #ff0000;
+    }
+}
